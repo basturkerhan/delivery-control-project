@@ -1,9 +1,13 @@
 # Delivery-Control (Sipariş Kontrol Sistemi) Projesi
-<br>
 
 ## Hakkında
-Bu proje; CSS, Bootstrap-5 kütüphanesi, HTML, PHP, Javascript ve jQuery kütüphanesi ile MySQL veritabanı kullanılarak Bilgisayar Mühendisliği 2. Sınıf Web Programlama dersi için hazırlanmıştır.
+Hala bazı esnaf ve marketler, bu iş için internette veritabanları olmadığı için sattıkları eşyaların teslimini yapacakları yerlerin adreslerini ve içeriğini küçük kağıtlara veya post-it kağıtlara yazmaktadır. Bu kağıtlar boyutları sebebiyle kaybolduğu veya zarar gördüğü takdirde teslimatta sıkıntılar çıkabilmektedir. Ayrıca teslimi yapıldıktan sonra adres gibi özel bilgiler içeren bu kağıtların çöp kutularına atılması da risk teşkil etmektedir. Bunun dışında kağıt israfına da yol açılmaktadır. Kağıt israfının önüne geçmek için bilgisayar diskine yapılan kayıtlara ise dağıtım anında bilgisayarın yanda olmadığı durumlarda erişilmesi zor olmaktadır. Bu proje ile her türlü cihazdan erişilebilecek tamamen ücretsiz bir internet sitesi yapılarak bu sorunların önüne geçilmesi amaçlanmıştır.
+<br>
+<br>
+Proje; CSS, Bootstrap kütüphanesi, HTML, PHP, Javascript ve jQuery kütüphanesi ile MySQL veritabanı kullanılarak Bilgisayar Mühendisliği 2. Sınıf Web Programlama dersi için hazırlanmıştır.
 **Projenin demo adresine şu bağlantı aracılığıyla erişebilirsiniz: http://deliverycontrol.eu5.org/**
+
+<RESPONSIVE IMAGE>
 
 ## Kullanılan Teknolojiler
 ##### -HTML
@@ -14,4 +18,36 @@ Bu proje; CSS, Bootstrap-5 kütüphanesi, HTML, PHP, Javascript ve jQuery kütü
 ##### -jQuery
 ##### -MySQL
 
-##### devam edecek
+## Proje Dizini
+
+##### - **/assets** klasörü içinde, proje içinde kullanılan çeşitli fotoğraflar yer almaktadır.
+##### - **/css** klasörü içinde projenin stil kodlarının yer aldığı dosya yer almaktadır.
+##### - **/db** klasörü içinde veritabanı bağlantısını sağlayan dosya yer almaktadır.
+##### - **/docs** klasörü içinde bootstrap kütüphanesi yer almaktadır.
+##### - **/js** klasörü içinde jQuery kütüphanesi yer almaktadır.
+##### - **/components** klasörü içinde tek php dosyasında uzun kod parçaları yazılıp modülerliği bozmamak için farklı dosyalara bölünen componentler yer almaktadır.
+##### - **/app** klasörü bir nevi projenin API kısmı olarak çalışmaktadır. Ön yüzde yapılan işlemler ile bu klasör içindeki uygun dosyalara GET/POST sorguları gönderilerek veritabanı üzerinde işlemler yapılmaktadır.
+
+## Veritabanı Hakkında
+
+Proje veritabanı 4 adet tablodan oluşmaktadır;
+<br>
+"users" tablosu üyelik sistemi için oluşturulmuştur ve id, user_name, password, name alanlarını tutmaktadır. Şifre veritabanına kaydedilirken doğrudan değil, şifrelenerek kaydedilmektedir.
+<br>
+"deliveries" tablosu sipariş bilgisi kartları içindir. Bu tablo, aynı zamanda içerdiği user_ID alanı sayesinde "users" tablosu ile 1-n ilişkisi içindedir. Bunun dışında kartın başlığını, alt başlığını, tamamlanma bilgisini, oluşturulma tarihini de tutmaktadır.
+<br>
+"categories" tablosu da içerdiği user_ID alanı sayesinde "users" tablosu ile 1-n ilişkisi içindedir. Bunun dışında bir de ilgili kategori adını tutmaktadır.
+<br>
+"category_delivery" tablosu ise deliveries ve categories alanları arasında n-m ilişkisi kurmak için eklenmiştir. Teslimat kartına karşılık gelen kategorileri tutmaktadır. n-m ilişkisi sayesinde bir teslimat bilgisi kartı birden fazla kategoriye sahip olabilmektedir.
+  
+  
+## Projeyi Sunucuma/Yerel Bilgisayarıma Nasıl Kurabilirim?
+Proje dosyalarının ana dizininde veya db klasörü altında db.sql isminde veritabanı dosyası yer almaktadır. Bu dosyayı PhpMyAdmin aracılığı ile sunucunuzun/yerel bilgisayarınızın veritabanına "İçe Aktar" seçeneği ile aktarınız. Ardından /db klasörü altında yer alan **db_conn.php** dosyasını açarak ayarları şu şekilde yapınız;
+```
+    $sName   = "";   // eğer yerel cihazınızda kullanacaksınız "localhost" olaral bırakabilirsiniz
+    $uName   = "";   // veritabanı kullanıcı adınız (yerel cihazınızda muhtemelen "root" olacaktır)
+    $pass    = "";   // veritabanı şifreniz (yerel cihazınızda sunucuyu xampp ile açtıysanız boş bırakabilirsiniz)
+    $db_name = "";   // veritabanınızın ismi
+```
+Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacaktır. Eğer çalışan bir örneğini görmek isterseniz;
+  **Projenin demo adresine şu bağlantı aracılığıyla erişebilirsiniz: http://deliverycontrol.eu5.org/**

@@ -51,3 +51,32 @@ Proje dosyalarının ana dizininde veya db klasörü altında db.sql isminde ver
 ```
 Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacaktır. Eğer çalışan bir örneğini görmek isterseniz;
   **Projenin demo adresine şu bağlantı aracılığıyla erişebilirsiniz: http://deliverycontrol.eu5.org/**
+  
+## Projenin Özellikleri ve Kullanımı
+  
+### -Üyelik Sistemi:
+  #### Proje üyelik sistemine sahiptir. Index sayfasının sağ üstünde yer alan Giriş Yap veya Kayıt Ol butonları ile gerekli işlemleri yapabilirsiniz.
+### -Cihaz Uyumlu (Responsive) Tasarım:
+  #### Projenin hakkında kısmında da belirtildiği üzere bu projeye hareket anında farklı cihazlardan düzgün bir şekilde ulaşabilmek çok önemlidir. Bu nedenle projenin tüm cihazlarda düzgün bir şekilde görüntülenebilmesi gerekmektedir. Çeşitli CSS kodları ve Bootstrap kütüphanesi kullanımı aracılığıyla bu özellik sağlanmıştır. 
+### -Teslimat Kartları, Kategoriler ve Kullanım Hakkında:
+  #### Uygulamaya giriş yaptıktan sonra sağ alt kısımda yuvarlak menü butonları görülecektir. Bu butonlardan;
+  ##### -Göz işareti olan, menüyü gizle/göster özelliğidir. Mobil kullanımda menünün kartları silme ve düzenleme butonlarının üstüne geçip kullanımı zorlaştırmasını önlemek için eklenmiştir. 
+  ##### -Kırmızı renkli etiket ikonuna sahip olan buton, eklenen bir kategoriyi menüden seçip silmek için kullanılabilmektedir.
+  ##### -Mavi renkli etiket ikonuna sahip olan buton, kullanıcının kendina ait bir kategori eklemesi için kullanılabilmektedir.
+  ##### -En alttaki "+" işaretli ikona sahip olan buton sayesindeyse yeni bir "Teslimat Bilgisi Kartı" eklenebilmektedir.
+  
+  
+ ### Teslimat Kartlarının Tasarımı Hakkında:
+  Eklenebilecek ayarlarına göre farklı çeşitlerde Teslimat Kartları üretilebilir. Bu kartlar şu şekilde sınıflandırılabilir;
+ 
+  
+  
+  #### 1- Kategorisi ve Alt Başlığı Olmayan Henüz Tamamlanmamış Teslimat Kartı
+  #### 2- Kategorisi ve Alt Başlığı Olmayan Tamamlanmış Teslimat Kartı
+  #### 3- Kategorisi Olmayan, Alt Başlığa Sahip ve Henüz Tamamlanmamış Teslimat Kartı
+  #### 4- Kategorisi Olmayan, Alt Başlığa Sahip ve Tamamlanmış Teslimat Kartı
+  #### 5- Alt Başlığı Olmayan, Kategoriye Sahip ve Henüz Tamamlanmamış Teslimat Kartı
+  #### 6- Alt Başlığı Olmayan, Kategoriye Sahip ve Tamamlanmış Teslimat Kartı
+ 
+  
+

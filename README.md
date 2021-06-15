@@ -7,6 +7,8 @@ Hala bazı esnaf ve marketler, bu iş için internette veritabanları olmadığ�
 Proje; CSS, Bootstrap kütüphanesi, HTML, PHP, Javascript ve jQuery kütüphanesi ile MySQL veritabanı kullanılarak Bilgisayar Mühendisliği 2. Sınıf Web Programlama dersi için hazırlanmıştır.
 **Projenin demo adresine şu bağlantı aracılığıyla erişebilirsiniz: http://deliverycontrol.eu5.org/**
 
+ ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/responsive.png)
+
 <RESPONSIVE IMAGE>
 
 ## Kullanılan Teknolojiler
@@ -64,6 +66,7 @@ Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacak
   ##### -Kırmızı renkli etiket ikonuna sahip olan buton, eklenen bir kategoriyi menüden seçip silmek için kullanılabilmektedir.
   ##### -Mavi renkli etiket ikonuna sahip olan buton, kullanıcının kendina ait bir kategori eklemesi için kullanılabilmektedir.
   ##### -En alttaki "+" işaretli ikona sahip olan buton sayesindeyse yeni bir "Teslimat Bilgisi Kartı" eklenebilmektedir.
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/home-responsive.png)
   
   
  ### Teslimat Kartlarının Tasarımı Hakkında:
@@ -72,11 +75,17 @@ Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacak
   
   
   #### 1- Kategorisi ve Alt Başlığı Olmayan Henüz Tamamlanmamış Teslimat Kartı
+  ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/1.png)
   #### 2- Kategorisi ve Alt Başlığı Olmayan Tamamlanmış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/2.png)
   #### 3- Kategorisi Olmayan, Alt Başlığa Sahip ve Henüz Tamamlanmamış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/3.png)
   #### 4- Kategorisi Olmayan, Alt Başlığa Sahip ve Tamamlanmış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/4.png)
   #### 5- Alt Başlığı Olmayan, Kategoriye Sahip ve Henüz Tamamlanmamış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/5.png)
   #### 6- Alt Başlığı Olmayan, Kategoriye Sahip ve Tamamlanmış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/6.png)
  
   
 

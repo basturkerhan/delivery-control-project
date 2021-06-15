@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, .landing {
+  min-height: 100vh !important;
+  min-height: -webkit-fill-available;
+}
+
+/* ---------------------------------------------------------------- */
+/* HOME RIGHT BUTTONS */
+.right-buttons {
+  position: fixed;
+  z-index: 100;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.add-delivery,
+.add-category,
+.remove-category-button,
+.hide-add-buttons-button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.add-delivery {
+  background-color: #60a3bc;
+  border: 1px solid #079992;
+}
+.add-category {
+  background-color: #2980b9;
+  border: 1px solid #3742fa;
+}
+.remove-category-button {
+  background-color: #d63031;
+  border: 1px solid #c0392b;
+}
+.hide-add-buttons-button {
+  background-color: #273c75;
+  border: 1px solid #192a56;
+}
+
+.add-delivery:hover,
+.add-category:hover,
+.remove-category-button:hover {
+  transition: background-color 1s;
+}
+.add-delivery:hover {
+  background-color: #079992;
+}
+.add-category:hover {
+  background-color: #80808b;
+}
+.remove-category-button:hover {
+  background-color: #c0392b;
+}
+
+/* ---------------------------------------------------------------- */
+
+.landing,
+.app-navbar {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 112, 147, 0.8) 0%,
+    rgba(34, 112, 147, 0.8) 100%
+  ),
+  url("../assets/bg.jpg");
+}
+
+.landing-content {
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------- */
+
+.landing,
+.landing-content,
+.right-buttons,
+.add-buttons,
+.update-delivery-form-area,
+.remove-deliveries-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-box,
+.detail-box {
+  width: 50%;
+  text-align: center;
+}
+.header-box {
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.header-box h1 {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+}
+.detail-box {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+.detail-box p {
+  font-size: 1.2rem !important;
+}
+
+/* ---------------------------------------------------------------- */
+/* AUTH PAGES */
+.login-page,
+.register-page {
+  background-color: #227093 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page form,
+.register-page form {
+  width: 50% !important;
+  min-width: 500px !important;
+  background-color: white !important;
+  padding: 3rem;
+  border-radius: 3rem;
+}
+
+.auth-button-area {
+  display: flex;
+  justify-content: space-between;
+}
+/* ---------------------------------------------------------------- */
+/* NAVBAR CSS */
+.navbar-brand,
+.nav-item a,
+.go-index-page-button a,
+.nav-right a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+.show, .dropdown-toggle, .app-navbar {
+  color: rgba(255, 255, 255, 0.7)!important;
+}
+
+.navbar-brand:hover,
+.nav-item a:hover,
+.go-index-page-button a:hover,
+.nav-right a:hover,
+.dropdown-toggle:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.5s;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* ---------------------------------------------------------------- */
+/* FORM CSS */
+.delivery-add-form,
+.category-add-form {
+  max-width: 100%;
+  width: 100%;
+  border: 0;
+  padding: 2rem;
+}
+
+/* ---------------------------------------------------------------- */
+/* DELIVERY CARD CSS */
+.delivery-item {
+  position: relative;
+  width: 95%;
+  margin: 1rem auto;
+  padding: 20px 10px;
+  box-shadow: 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.delivery-item h2 {
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #555;
+}
+
+.delivery-item small {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+  color: #888;
+  padding-left: 30px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.delivery-item input {
+  margin: 0px 5px;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.delivery-checked {
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 2rem,
+    #ddd 2rem,
+    #ddd 4rem
+  ) !important;
+}
+
+.delivery-card-buttons {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  align-items: stretch;
+}
+
+.update-delivery-button {
+  border: 0 !important;
+  font-size: 1.3rem;
+  color: brown;
+  cursor: pointer;
+  background-color: inherit !important;
+}
+
+.remove-delivery {
+  font-size: 1.3rem;
+  color: #333;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+/* ---------------------------------------------------------------- */
+/* Update delivery */
+.update-delivery-form-area {
+  justify-content: center;
+  align-items: center;
+}
+
+.update-delivery-form-area form {
+  margin-top: 5rem;
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .update-delivery-form-area form {
+    margin-top: 5rem;
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Categories */
+.categories-section {
+  padding-left: 2rem;
+  display: flex;
+}
+.categories-section h6 {
+  margin-right: 0.5rem;
+}
+
+/* ---------------------------------------------------------------- */
+/* Other CSS Options */
+.attr-list {
+  color: #ddd;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  list-style: none;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+.attr-list li {
+  margin-bottom: 0.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.empty {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #cccc;
+}
+
+.modal-footer {
+  padding: 0.75rem 0 0 !important;
+}
+
+.dropdown-item {
+  color: #333 !important;
+  font-weight: 300 !important;
+}
+
+.card-link, .ca, .go-index-page-button a {
+  text-decoration: none;
+}
+.ca:hover {
+  color: #000;
+  transition: color 1s;
+}
+
+.go-index-page-button {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  padding: 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exit-button, .go-index-page-button a {
+  margin-left: 0.4rem;
+  font-size: 1.3rem;
+}
+
+.category-list {
+  display: flex;
+}
+
+.category-list h5 {
+  margin-right: 1rem;
+  cursor: pointer;
+}

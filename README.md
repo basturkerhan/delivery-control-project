@@ -41,7 +41,7 @@ Proje veritabanı 4 adet tablodan oluşmaktadır;
 "categories" tablosu da içerdiği user_ID alanı sayesinde "users" tablosu ile 1-n ilişkisi içindedir. Bunun dışında bir de ilgili kategori adını tutmaktadır.
 <br>
 "category_delivery" tablosu ise deliveries ve categories alanları arasında n-m ilişkisi kurmak için eklenmiştir. Teslimat kartına karşılık gelen kategorileri tutmaktadır. n-m ilişkisi sayesinde bir teslimat bilgisi kartı birden fazla kategoriye sahip olabilmektedir.
-  
+![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/sema.png)
   
 ## Projeyi Sunucuma/Yerel Bilgisayarıma Nasıl Kurabilirim?
 Proje dosyalarının ana dizininde veya db klasörü altında db.sql isminde veritabanı dosyası yer almaktadır. Bu dosyayı PhpMyAdmin aracılığı ile sunucunuzun/yerel bilgisayarınızın veritabanına "İçe Aktar" seçeneği ile aktarınız. Ardından /db klasörü altında yer alan **db_conn.php** dosyasını açarak ayarları şu şekilde yapınız;
@@ -83,9 +83,12 @@ Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacak
   #### 4- Kategorisi Olmayan, Alt Başlığa Sahip ve Tamamlanmış Teslimat Kartı
    ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/4.png)
   #### 5- Alt Başlığı Olmayan, Kategoriye Sahip ve Henüz Tamamlanmamış Teslimat Kartı
-   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/5.png)
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/7.png)
   #### 6- Alt Başlığı Olmayan, Kategoriye Sahip ve Tamamlanmış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/8.png)
+  #### 7- Alt Başlığı Olan, Kategoriye Sahip ve Henüz Tamamlanmamış Teslimat Kartı
+   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/5.png)
+  #### 8- Alt Başlığı Olan, Kategoriye Sahip ve Tamamlanmış Teslimat Kartı
    ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/6.png)
- 
   
 

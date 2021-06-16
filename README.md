@@ -92,3 +92,5 @@ Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacak
    ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/6.png)
   
 
+ ### Yazar
+ Erhan Baştürk

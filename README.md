@@ -60,13 +60,13 @@ Ayarları bu şekilde yaptıktan sonra artık sunucunuz başarıyla çalışacak
   #### Proje üyelik sistemine sahiptir. Index sayfasının sağ üstünde yer alan Giriş Yap veya Kayıt Ol butonları ile gerekli işlemleri yapabilirsiniz.
 ### -Cihaz Uyumlu (Responsive) Tasarım:
   #### Projenin hakkında kısmında da belirtildiği üzere bu projeye hareket anında farklı cihazlardan düzgün bir şekilde ulaşabilmek çok önemlidir. Bu nedenle projenin tüm cihazlarda düzgün bir şekilde görüntülenebilmesi gerekmektedir. Çeşitli CSS kodları ve Bootstrap kütüphanesi kullanımı aracılığıyla bu özellik sağlanmıştır. 
+ ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/home-responsive.png)
 ### -Teslimat Kartları, Kategoriler ve Kullanım Hakkında:
   #### Uygulamaya giriş yaptıktan sonra sağ alt kısımda yuvarlak menü butonları görülecektir. Bu butonlardan;
   ##### -Göz işareti olan, menüyü gizle/göster özelliğidir. Mobil kullanımda menünün kartları silme ve düzenleme butonlarının üstüne geçip kullanımı zorlaştırmasını önlemek için eklenmiştir. 
   ##### -Kırmızı renkli etiket ikonuna sahip olan buton, eklenen bir kategoriyi menüden seçip silmek için kullanılabilmektedir.
   ##### -Mavi renkli etiket ikonuna sahip olan buton, kullanıcının kendina ait bir kategori eklemesi için kullanılabilmektedir.
   ##### -En alttaki "+" işaretli ikona sahip olan buton sayesindeyse yeni bir "Teslimat Bilgisi Kartı" eklenebilmektedir.
-   ![Screenshot](https://github.com/basturkerhan/delivery-control-project/blob/main/github_images/home-responsive.png)
   
   
  ### Teslimat Kartlarının Tasarımı Hakkında:
